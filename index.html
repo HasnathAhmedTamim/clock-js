@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>C</title>
+    <style>
+      body {
+        background-color: springgreen;
+        color: slateblue;
+        font-family: sans-serif;
+      }
+      h1 {
+        text-align: center;
+      }
+      .clock {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 24px;
+        justify-content: center;
+      }
+      .hour,
+      .minute,
+      .second {
+        background-color: gold;
+        width: 150px;
+        height: 150px;
+        border-radius: 16px;
+        color: darkblue;
+
+        font-size: x-large;
+        font-weight: 800;
+      }
+      .days,
+      .month,
+      .date {
+        background-color: darksalmon;
+        width: 150px;
+        height: 50px;
+        border-radius: 12px;
+        color: darkblue;
+
+        font-size: x-large;
+        font-weight: 800;
+      }
+      .center {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        padding: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Clock</h1>
+    <section class="center">
+      <!-- <div class="clock2">
+        
+        <button class="days"></button>
+        <button class="month"></button>
+        <button class="date"></button>
+      </div> -->
+      <div class="clock">
+        <button class="hour"></button>
+        <button class="minute"></button><button class="second"></button>
+      </div>
+    </section>
+
+    <script src="sricpt.js"></script>
+  </body>
+</html>
